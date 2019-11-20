@@ -1,9 +1,9 @@
 enum TaskList {
-    Fry="Fry", Cook="Cook", Bake="Bake", Boil="Boil"
+    FRY="Fry", COOK="Cook", BAKE="Bake", BOIL="Boil"
 }
 
 enum Colors {
-    White = "White", Green = "Green" , Red = "Red"
+    WHITE = "White", GREEN = "Green" , RED = "Red"
 }
 
 export {TaskList, Colors};

@@ -2,8 +2,8 @@ import { AbstractDevice } from "./AbstractDevice"
 import { Colors } from "./Enums"
 
 export class DigitalWatch extends AbstractDevice {
-    protected currentColor: string = Colors.White;
-    protected colors: string[] = Object.keys(Colors);
+    protected currentColor: string = Colors.WHITE;
+    protected colors: string[] = Object.values(Colors);
     protected brightness: number = 0;
     protected clock: null | number = null;
 
@@ -17,12 +17,8 @@ export class DigitalWatch extends AbstractDevice {
         this.clockStop();
     }
 
-    changeColor(str: Colors): void {
-        for (let item of this.colors) {
-            if (str === item) {
-                this.currentColor = str;
-            }
-        }
+    changeColor(str: Colors): void { 
+       this.currentColor = this.colors.find((item)=>str === item);
     }
 
     getColor(): string {

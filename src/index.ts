@@ -26,5 +26,5 @@ console.log(someMulticooker.getTasklist());
 
 console.log(newWatch.getAllColors());
 console.log(newWatch.getColor());
-newWatch.changeColor(Colors.Red);
+newWatch.changeColor(Colors.RED);
 console.log(newWatch.getColor());
